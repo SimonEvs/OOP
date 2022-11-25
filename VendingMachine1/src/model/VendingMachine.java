@@ -17,7 +17,7 @@ public class VendingMachine {
     public List<Product> getProductByCost(){
         List<Product> res=new ArrayList<>();
         for (int i =0;i<products.size();i++){
-            if (products.get(i).getCost()<=cost){
+            if (products.get(i).getCost() <= cost){
                 res.add(products.get(i));
             }
         }
