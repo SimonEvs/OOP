@@ -8,9 +8,9 @@ public class Main{
     public static void main(String[] args) {
         IEngine engine = new Engine();
         Car car = new Car(engine);
-        
+        Car airplane =new Car(engine);
         car.getEngineInfo();
-
+        airplane.getEngineInfo();
 
     
     }
