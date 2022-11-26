@@ -19,4 +19,7 @@ public class Engine implements IEngine {
         }
         else{return "Электродвигатель";}
     }
+
+    
+
 }
