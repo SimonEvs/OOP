@@ -1,34 +1,34 @@
-package VendingMachine1.src.model;
+// package VendingMachine1.src.model;
 
-public class Bottle extends Product{
+// public class Bottle extends Product{
  
-    private double volume;
+//     private double volume;
 
-    public Bottle(String name, double cost, double volume) {
-        super(name, cost);
-        this.volume=volume;
+//     public Bottle(String name, double cost, double volume) {
+//         super(name, cost);
+//         this.volume=volume;
         
-    }
+//     }
 
-    public double getVolume() {
-        return volume;
-    }
+//     public double getVolume() {
+//         return volume;
+//     }
 
-    public void setVolume(double volume) {
-        this.volume = volume;
-    }
+//     public void setVolume(double volume) {
+//         this.volume = volume;
+//     }
 
-    // public double getPrice(){
-    //     return getCost()*volume;
-    // }
+//     // public double getPrice(){
+//     //     return getCost()*volume;
+//     // }
     
-    public double getCost(){
-        return super.getCost()*getVolume();
-    }
+//     public double getCost(){
+//         return super.getCost()*getVolume();
+//     }
 
-    @Override
-    public String toString() {
+//     @Override
+//     public String toString() {
         
-        return super.toString()+" "+ volume+"л.";
-    }
-}
+//         return super.toString()+" "+ volume+"л.";
+//     }
+// }
