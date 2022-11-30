@@ -10,6 +10,7 @@ public class StudyGroupIterator implements Iterator<Student> {
     public StudyGroupIterator(List<Student> studentList) {
         this.studentList = studentList;
     }
+ 
 
     @Override
     public boolean hasNext() {
@@ -20,4 +21,11 @@ public class StudyGroupIterator implements Iterator<Student> {
     public Student next() {
         return studentList.get(index++);
     }
+
+
+    public int getIndex() {
+        return index;
+    }
+
+
 }

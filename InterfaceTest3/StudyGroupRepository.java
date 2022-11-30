@@ -1,5 +1,8 @@
 package InterfaceTest3;
 
+import java.util.Collection;
+import java.util.Collections;
+
 public class StudyGroupRepository {
 
     private StudyGroup group;
@@ -15,4 +18,16 @@ public class StudyGroupRepository {
         group.addStudent(student);
     }
 
+    // public void sort(){
+    //     Collections.sort(group.getStudentList());
+    // }
+
+    public void sortByName(){
+        // Collections.sort(group.getStudentList(),new StudentComparatorByName());
+        group.getStudentList().sort(new StudentComparatorByName());
+    }
+
+    public void sortByID(){
+        Collections.sort(group.getStudentList(),new StudentComparatorByID());
+    }
 }

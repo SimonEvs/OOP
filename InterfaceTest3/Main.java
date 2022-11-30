@@ -4,18 +4,24 @@ import java.util.Iterator;
 
 public class Main {
     public static void main(String[] args) {
-        
-    
-    StudyGroup group = new StudyGroup();
-    StudyGroupRepository repository = new StudyGroupRepository(group);
 
-    repository.addStudent("Петя");
-    repository.addStudent("Вася");
-    repository.addStudent("Коля");
-    repository.addStudent("Максим");
+        StudyGroup group = new StudyGroup();
+        StudyGroupRepository repository = new StudyGroupRepository(group);
+
+        repository.addStudent("Петя");
+        repository.addStudent("Вася");
+        repository.addStudent("Коля");
+        repository.addStudent("Максим");
+
+        // repository.sort();
 
 
-    for(Student student:group){
-        System.out.println(student);
+        repository.sortByID();
+        // repository.sortByName();
+
+        for (Student student : group) {
+            System.out.println(student);
+
+        }
     }
-}}
+}
