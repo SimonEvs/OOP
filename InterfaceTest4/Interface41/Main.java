@@ -12,12 +12,12 @@ public class Main {
         array1.add(7);
         array1.add(3);
 
+        array1.sortBy();
         for (int number:array1) {
             System.out.println(number);
 
         }
 
-        array1.getLastArrayIndex();
     }
 }
 
