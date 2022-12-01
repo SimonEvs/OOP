@@ -4,14 +4,10 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Comparator;
 
-public class ArraysComporator implements Comparable<ArrayList> {  
-    int index;
+public class ArraysComporator implements Comparator<Integer> {
+
     @Override
-    public int compareTo(ArrayList o) {
-        if (o.get(index)==o.get(o.size()-1)){
-            
-            return (int) o.get(index);
-        }
-        return 0;
+    public int compare(Integer t1, Integer t2) {
+        return Integer.compare((t1 % 10), (t2 % 10));
     }
 }

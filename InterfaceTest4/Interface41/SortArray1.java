@@ -5,7 +5,7 @@ import java.util.Collections;
 
 public class SortArray1 {
 
-    private ArrayList<Integer> arr=new ArrayList<>();
+    public ArrayList<Integer> arr=new ArrayList<>();
 
     
     public ArrayList<Integer> getArr() {
@@ -16,7 +16,6 @@ public class SortArray1 {
         this.arr = arr;
     }
     public void sortBy() {
-        //Collections.sort(arr.get(index),new ArraysComporator());
-        arr.getArr().sort(new ArraysComporator());
+        arr.sort(new ArraysComporator());
     }
 }
