@@ -3,11 +3,11 @@ package InterfaceTest3;
 import java.util.Iterator;
 import java.util.List;
 
-public class StudyGroupIterator implements Iterator<Student> {
+public class StudyGroupIterator<T> implements Iterator<T> {
     private int index;
-    List<Student> studentList;
+    List<T> studentList;
    
-    public StudyGroupIterator(List<Student> studentList) {
+    public StudyGroupIterator(List<T> studentList) {
         this.studentList = studentList;
     }
  
@@ -18,7 +18,7 @@ public class StudyGroupIterator implements Iterator<Student> {
     }
 
     @Override
-    public Student next() {
+    public T next() {
         return studentList.get(index++);
     }
 

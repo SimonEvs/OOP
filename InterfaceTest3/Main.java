@@ -5,7 +5,7 @@ import java.util.Iterator;
 public class Main {
     public static void main(String[] args) {
 
-        StudyGroup group = new StudyGroup();
+        StudyGroup<Student> group = new StudyGroup<>();
         StudyGroupRepository repository = new StudyGroupRepository(group);
 
         repository.addStudent("Петя");
